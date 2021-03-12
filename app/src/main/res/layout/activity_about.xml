@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tools:ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppTheme.NotTransparent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_placeholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/profil" />
+            <TextView
+                android:id="@+id/backToMain"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:drawableStart="@drawable/back_btn"
+                />
+
+        </FrameLayout>
+
+        <TextView
+            style="@style/TextContent.SucculentFont"
+            android:layout_marginTop="16dp"
+            android:text="@string/MyName"
+            android:textStyle="bold"
+            android:paddingBottom="5dp"
+            android:textSize="28sp" />
+        <TextView
+            style="@style/TextContent.SucculentFont.Light"
+            android:text="@string/studentid"
+            android:layout_marginBottom="8dp"
+            android:textSize="18sp" />
+        <TextView
+            style="@style/TextContent.SucculentFont.Light"
+            android:text="@string/aboutme"
+            android:layout_marginBottom="8dp"
+            android:textSize="14sp" />
+
+        <TextView
+            style="@style/TextContent.Subtitle"
+            android:layout_marginBottom="8dp"
+            android:text="@string/email" />
+
+        <LinearLayout
+            android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_dicoding"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@android:color/transparent"
+                android:layout_margin="15dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/dicoding"
+                 />
+
+            <ImageButton
+                android:id="@+id/btn_github"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@android:color/transparent"
+                android:layout_margin="15dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/github"
+
+                 />
+            <ImageButton
+                android:id="@+id/btn_email"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@android:color/transparent"
+                android:layout_margin="15dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/email"
+
+                 />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:background="@android:color/transparent"
+            android:layout_margin="15dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/bangkit"
+            />
+        <TextView
+            style="@style/TextContent.Subtitle"
+            android:layout_marginBottom="8dp"
+            android:text="@string/datasource" />
+
+
+
+
+
+
+    </LinearLayout>
+</tools:ScrollView>
